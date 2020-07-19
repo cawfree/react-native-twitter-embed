@@ -45,7 +45,7 @@ const EmbeddedTimeline = ({ alias, style, width, height, pointerEvents, limit, d
         style={{
           width,
           height: height,
-          opacity: Animated.subtract(1, animOpacity),
+          opacity: Animated.add(1, Animated.multiply(animOpacity, -1)),
         }}
       >
         <WebView
