@@ -1,1 +1,1 @@
-export {WebView, EmbeddedTimeline} from "./components";
+export {WebView, ProfileHeader} from "./components";

@@ -1,5 +1,5 @@
 # react-native-twitter-embed
-Embed a user's latest Tweet in React Native.
+Embed a user's latest Tweet in React Native, without the need for API keys. Works on [**Android**](), [**iOS**]() and [**Web**]() for vanilla and Expo.
 
 ## Getting Started
 
@@ -15,16 +15,12 @@ yarn add react-native-twitter-embed
 
 ```javascript
 import React from "react";
-import {EmbeddedTimeline} from "react-native-twitter-embed";
+import PropTypes from "prop-types";
+import {ProfileHeader} from "react-native-twitter-embed";
 
 export default () => (
-  <EmbeddedTimeline
-    alias="cawfree"
-    width={220}
-    height={80}
-    limit={1}
-    dark
-    pointerEvents="auto"
+  <ProfileHeader
+    mention="cawfree"
   />
 );
 ```
