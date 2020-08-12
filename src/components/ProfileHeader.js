@@ -55,4 +55,4 @@ ProfileHeader.defaultProps = {
   fetch: fetchTwitterProfile,
 };
 
-export default ProfileHeader;
+export default React.memo(ProfileHeader);
