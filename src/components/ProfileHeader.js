@@ -32,7 +32,7 @@ const ProfileHeader = ({ style, mention, fetch, onFailure, ...extraProps }) => {
             posterImageUrl={data.profile_image_url}
             posterDisplayName={data.name}
             posterUniqueName={data.screen_name}
-            isPosterVerified={false}
+            isPosterVerified={data.verified}
           />
         </View>
       )} 
